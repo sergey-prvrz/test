@@ -1,20 +1,28 @@
 #5x^2-14x+17=0
 
-a = input ("введите a:")
-a1 = int (a)
-print(a1)
-b = input ("введите b:")
-b1 = int (b)
-print(a1)
-c = input ("введите c:")
-c1 = int (c)
-print(a1)
+try:
+    a = int (input ("введите a:"))
+except ValueError:
+    print ("Вы ввели не число")
+print(a)
 
-D = b1**2 - 4*a1*c1
+try:
+    b = int (input ("введите b:"))
+except ValueError:
+    print("Вы ввели не число")
+print(b)
+
+try:
+    c = int (input ("введите c:"))
+except ValueError:
+    print("Вы ввели не число")
+print(c)
+
+D = b**2 - 4*a*c
 if D > 0:
-    x1 = (b1 + D**0.5)/2*a1
-    x2 = (b1 - D**0.5)/2*a1
-    print(D)
+    x1 = (b + D**0.5)/2*a
+    x2 = (b - D**0.5)/2*a
+    print("D = ", D)
     print(x1, x2)
 elif D == 0:
     print(1)
