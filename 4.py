@@ -27,7 +27,7 @@ if D > 0:
 elif D == 0:
     print(1)
 else:
-    print(":)")
+    print("нет решения")
 
 if __name__ == '__main__':
     pass
